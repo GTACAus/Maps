@@ -30,6 +30,26 @@
     display: flex;
     justify-content: space-between; /* Adjusted for even spacing */
     padding: 10px;
+     img.fullscreen {
+    width: 60%; /* Adjusted width to 60% */
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    margin: 0 auto 20px; /* Centered horizontally and margin below */
+  }
+
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .button {
+      width: calc(50% - 20px); /* Two buttons per row */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .button {
+      width: 100%; /* One button per row */
+      margin: 5px 0;
+    }
+  }
   }
   }
   }
@@ -47,5 +67,10 @@
   <a href="https://www.thinglink.com/card/1827142681298469732" class="button">Everything Map</a>
   
 </div>
+  
+<img src="cycle.png" alt="Background Image" class="fullscreen">
+</style>
+</head>
+
 </body>
 </html>
